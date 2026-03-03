@@ -4,16 +4,30 @@ public class PracticeProblem {
 
 	}
 
-	public static void q1() {
-		//Write question 1 code here
+	public static int sum2D(int[][] x) {
+		int y=0;
+		for (int i=0;i<x.length;i++){
+			for (int j=0; j<x[i].length;j++) {
+				y+=x[i][j];
+			}
+		}
+		return y;
 	}
 
-	public static void q2() {
-		//Write question 2 code here
+	public static int sumRow(int[][] x, int y) {
+		int z=0;
+		for (int i=0;i<x[y].length;i++) {
+			z+=x[y][i];
+		}
+		return z;
 	}
 
-	public static void q3() {
-		//Write question 3 code here
+	public static int sumColumn(int[][] x, int y) {
+		int z=0;
+		for (int i=0;i<x.length; i++) {
+			z+=x[i][y];
+		}
+		return z;
 	}
 
 	public static void q4() {
